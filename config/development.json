@@ -4,8 +4,8 @@
     "port": 8888,
     "/* secure */": "/* whether this connects via https */",
     "secure": true,
-    "key": __dirname +"/sslcerts/key.pem",
-    "cert": __dirname +"/sslcerts/cert.pem",
+    "key": "/sslcerts/key.pem",
+    "cert": "/sslcerts/cert.pem",
     "password": null
   },
   "rooms": {
