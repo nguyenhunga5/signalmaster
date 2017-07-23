@@ -14,7 +14,7 @@
   },
   "stunservers": [
     {
-      "url": "stun:stun.l.google.com:19302"
+      "url": "144.217.93.17:3478"
     }
   ],
   "turnservers": [
