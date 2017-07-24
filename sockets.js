@@ -7,7 +7,7 @@ module.exports = function (server, config) {
 
     io.sockets.on('connection', function (client) {
 
-        console.log('Client connected: ', client);
+        console.log('Client connected: ', client.id);
 
         client.resources = {
             screen: false,
@@ -70,7 +70,7 @@ module.exports = function (server, config) {
         // event type string of "socket end" gets passed too.
         client.on('disconnect', function () {
 
-            console.log('Client disconnected: ', client);
+            console.log('Client disconnected: ', client.id);
             removeFeed();
         });
         client.on('leave', function () {
