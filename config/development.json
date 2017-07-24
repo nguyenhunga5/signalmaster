@@ -14,7 +14,7 @@
   },
   "stunservers": [
     {
-      "url": "127.0.0.1:3478"
+      "url": "nguyenhunga5.ddns.net:3478"
     }
   ],
   "turnservers": [
