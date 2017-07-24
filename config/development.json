@@ -18,12 +18,12 @@
     }
   ],
   "turnservers": [
-    {
-      "urls": [
-        "turn:your.turn.servers.here"
-      ],
-      "secret": "turnserversharedsecret",
-      "expiry": 86400
-    }
+    // {
+    //   "urls": [
+    //     "turn:your.turn.servers.here"
+    //   ],
+    //   "secret": "turnserversharedsecret",
+    //   "expiry": 86400
+    // }
   ]
 }
