@@ -17,13 +17,5 @@
       "url": "nguyenhunga5.ddns.net:3478"
     }
   ],
-  "turnservers": [
-    // {
-    //   "urls": [
-    //     "turn:your.turn.servers.here"
-    //   ],
-    //   "secret": "turnserversharedsecret",
-    //   "expiry": 86400
-    // }
-  ]
+  "turnservers": []
 }
