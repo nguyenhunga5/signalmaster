@@ -6,6 +6,9 @@ module.exports = function (server, config) {
     var io = socketIO.listen(server);
 
     io.sockets.on('connection', function (client) {
+
+        console.log('Client connected: ', client);
+
         client.resources = {
             screen: false,
             video: true,
@@ -66,6 +69,8 @@ module.exports = function (server, config) {
         // we don't want to pass "leave" directly because the
         // event type string of "socket end" gets passed too.
         client.on('disconnect', function () {
+
+            console.log('Client disconnected: ', client);
             removeFeed();
         });
         client.on('leave', function () {
@@ -74,7 +79,7 @@ module.exports = function (server, config) {
 
         client.on('create', function (name, cb) {
             if (arguments.length == 2) {
-                cb = (typeof cb == 'function') ? cb : function () {};
+                cb = (typeof cb == 'function') ? cb : function () { };
                 name = name || uuid();
             } else {
                 cb = name;
@@ -94,7 +99,7 @@ module.exports = function (server, config) {
         // useful for large-scale error monitoring
         client.on('trace', function (data) {
             console.log('trace', JSON.stringify(
-            [data.type, data.session, data.prefix, data.peer, data.time, data.value]
+                [data.type, data.session, data.prefix, data.peer, data.time, data.value]
             ));
         });
 
@@ -146,6 +151,6 @@ function safeCb(cb) {
     if (typeof cb === 'function') {
         return cb;
     } else {
-        return function () {};
+        return function () { };
     }
 }
