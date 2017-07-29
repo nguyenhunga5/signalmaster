@@ -14,7 +14,7 @@
   },
   "stunservers": [
     {
-      "url": "stun:144.217.93.17:3478?transport=udp",
+      "url": "stun:144.217.93.17:3478?transport=tcp",
       "expiry": 86400
     }
   ],
