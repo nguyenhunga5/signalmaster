@@ -14,7 +14,8 @@
   },
   "stunservers": [
     {
-      "url": "stun:nguyenhunga5.ddns.net:3478"
+      "url": "stun:nguyenhunga5.ddns.net:3478?transport=udp",
+      "expiry": 86400
     }
   ],
   "turnservers": []
