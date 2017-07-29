@@ -4,8 +4,8 @@
     "port": 8888,
     "/* secure */": "/* whether this connects via https */",
     "secure": true,
-    "key": "config/sslcerts/key.pem",
-    "cert": "config/sslcerts/cert.pem",
+    "key": "/config/sslcerts/key.pem",
+    "cert": "/config/sslcerts/cert.pem",
     "password": null
   },
   "rooms": {
@@ -14,14 +14,9 @@
   },
   "stunservers": [
     {
-      "url": "stun:stun.l.google.com:19302"
-    }
-  ],
-  "turnservers": [
-    {
-      "urls": ["turn:your.turn.servers.here"],
-      "secret": "turnserversharedsecret",
+      "url": "stun:144.217.93.17:3478?transport=udp",
       "expiry": 86400
     }
-  ]
+  ],
+  "turnservers": []
 }
